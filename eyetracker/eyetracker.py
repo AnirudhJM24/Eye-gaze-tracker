@@ -27,7 +27,7 @@ def move_mouse(x,y):
 def contour(eye):
     rows, cols = eye.shape
     eye_2 = eye
-    eye_2 = cv2.GaussianBlur(eye_2,(7,7),0)
+    eye_2 = cv2.GaussianBlur(eye_2,(5,5),0)
 
 
     _, threshold = cv2.threshold(eye_2, 50, 255, cv2.THRESH_BINARY_INV)
