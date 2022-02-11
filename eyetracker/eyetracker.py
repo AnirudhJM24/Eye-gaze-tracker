@@ -19,7 +19,7 @@ cap = cv2.VideoCapture(0)
 
 def move_mouse(x,y):
       
-        mouse.move(x*30,y*30,absolute=True,duration=0)
+        
 
 
     
