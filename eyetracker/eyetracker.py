@@ -17,12 +17,7 @@ eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 cap = cv2.VideoCapture(0)
 
-def move_mouse(x,y):
-      
-        
 
-
-    
 
 def contour(eye):
     rows, cols = eye.shape
@@ -42,7 +37,6 @@ def contour(eye):
         cv2.rectangle(eye, (x, y), (x + w, y + h), (255, 0, 0), 2)
         cv2.line(eye, (x + int(w/2), 0), (x + int(w/2), rows), (0, 255, 0), 2)
         cv2.line(eye, (0, y + int(h/2)), (cols, y + int(h/2)), (0, 255, 0), 2)
-        move_mouse(x,y)
         break
     
         cv2.imshow("eye",eye_2)
